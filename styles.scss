@@ -13,6 +13,27 @@ body {
   right: 5%;
   left: 5%;
 
+  #left {
+    left: -26%;
+    -webkit-transform: skew(55deg);
+
+    &:hover {
+      -webkit-transition-duration:0.5s;
+      width: 90%;
+      z-index: 1;
+    }
+  }
+  #right {
+    right: -26%;
+    -webkit-transform: skew(55deg);
+
+    &:hover {
+      -webkit-transition-duration:0.5s;
+      width: 90%;
+      z-index: 1;
+    }
+  }
+
 
   .polygon {
     height: 100%;
@@ -23,22 +44,12 @@ body {
     #league {
       -webkit-transform: skew(-55deg);
       position: absolute;
-      right: -30%;
-      top: -27%;
     }
     #flash {
       -webkit-transform: skew(-55deg);
       position: absolute;
-      left: -55%;
     }
   }
 
-  #left {
-    left: -26%;
-    -webkit-transform: skew(55deg);
-  }
-  #right {
-    right: -26%;
-    -webkit-transform: skew(55deg);
-  }
+
 }

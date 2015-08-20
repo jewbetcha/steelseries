@@ -11,28 +11,35 @@ body {
   overflow: hidden;
   right: 5%;
   left: 5%; }
-  /* line 17, styles.scss */
+  /* line 16, styles.scss */
+  .container #left {
+    left: -26%;
+    -webkit-transform: skew(55deg); }
+    /* line 20, styles.scss */
+    .container #left:hover {
+      -webkit-transition-duration: 0.5s;
+      width: 90%;
+      z-index: 1; }
+  /* line 26, styles.scss */
+  .container #right {
+    right: -26%;
+    -webkit-transform: skew(55deg); }
+    /* line 30, styles.scss */
+    .container #right:hover {
+      -webkit-transition-duration: 0.5s;
+      width: 90%;
+      z-index: 1; }
+  /* line 38, styles.scss */
   .container .polygon {
     height: 100%;
     width: 76%;
     position: absolute;
     overflow: hidden; }
-    /* line 23, styles.scss */
+    /* line 44, styles.scss */
     .container .polygon #league {
       -webkit-transform: skew(-55deg);
-      position: absolute;
-      right: -30%;
-      top: -27%; }
-    /* line 29, styles.scss */
+      position: absolute; }
+    /* line 48, styles.scss */
     .container .polygon #flash {
       -webkit-transform: skew(-55deg);
-      position: absolute;
-      left: -55%; }
-  /* line 36, styles.scss */
-  .container #left {
-    left: -26%;
-    -webkit-transform: skew(55deg); }
-  /* line 40, styles.scss */
-  .container #right {
-    right: -26%;
-    -webkit-transform: skew(55deg); }
+      position: absolute; }
