@@ -8,13 +8,31 @@ body {
   width: 90%;
   margin: 100px auto;
   position: absolute;
+  overflow: hidden;
   right: 5%;
   left: 5%; }
-  /* line 15, styles.scss */
+  /* line 17, styles.scss */
   .container .polygon {
     height: 100%;
-    width: 70%;
-    border: 1px solid #000;
-    position: relative;
-    left: -116;
-    -webkit-transform: skew(-25deg); }
+    width: 76%;
+    position: absolute;
+    overflow: hidden; }
+    /* line 23, styles.scss */
+    .container .polygon #league {
+      -webkit-transform: skew(-55deg);
+      position: absolute;
+      right: -30%;
+      top: -27%; }
+    /* line 29, styles.scss */
+    .container .polygon #flash {
+      -webkit-transform: skew(-55deg);
+      position: absolute;
+      left: -55%; }
+  /* line 36, styles.scss */
+  .container #left {
+    left: -26%;
+    -webkit-transform: skew(55deg); }
+  /* line 40, styles.scss */
+  .container #right {
+    right: -26%;
+    -webkit-transform: skew(55deg); }

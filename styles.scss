@@ -9,16 +9,36 @@ body {
   width: 90%;
   margin: 100px auto;
   position: absolute;
+  overflow: hidden;
   right: 5%;
   left: 5%;
 
+
   .polygon {
     height: 100%;
-    width: 70%;
-    border: 1px solid #000;
-    position: relative;
-    left: -116;
-    -webkit-transform: skew(-25deg);
-    
+    width: 76%;
+    position: absolute;
+    overflow: hidden;
+
+    #league {
+      -webkit-transform: skew(-55deg);
+      position: absolute;
+      right: -30%;
+      top: -27%;
+    }
+    #flash {
+      -webkit-transform: skew(-55deg);
+      position: absolute;
+      left: -55%;
+    }
+  }
+
+  #left {
+    left: -26%;
+    -webkit-transform: skew(55deg);
+  }
+  #right {
+    right: -26%;
+    -webkit-transform: skew(55deg);
   }
 }
