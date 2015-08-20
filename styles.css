@@ -1,3 +1,10 @@
 /* line 1, styles.scss */
 body {
-  display: none; }
+  margin: 0; }
+
+/* line 5, styles.scss */
+.container {
+  height: 500px;
+  width: 90%;
+  margin: 100px auto;
+  border: 1px solid #000; }
