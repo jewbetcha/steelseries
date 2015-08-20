@@ -1,13 +1,20 @@
-/* line 1, styles.scss */
+/* line 3, styles.scss */
 body {
   margin: 0; }
 
-/* line 5, styles.scss */
+/* line 7, styles.scss */
 .container {
   height: 500px;
   width: 90%;
   margin: 100px auto;
-  border: 1px solid #000;
   position: absolute;
   right: 5%;
   left: 5%; }
+  /* line 15, styles.scss */
+  .container .polygon {
+    height: 100%;
+    width: 70%;
+    border: 1px solid #000;
+    position: relative;
+    left: -116;
+    -webkit-transform: skew(-25deg); }
