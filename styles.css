@@ -22,7 +22,7 @@ body {
       z-index: 1; }
   /* line 26, styles.scss */
   .container #right {
-    right: -26%;
+    right: -27%;
     -webkit-transform: skew(55deg); }
     /* line 30, styles.scss */
     .container #right:hover {
@@ -32,7 +32,7 @@ body {
   /* line 38, styles.scss */
   .container .polygon {
     height: 100%;
-    width: 76%;
+    width: 78%;
     position: absolute;
     overflow: hidden; }
     /* line 44, styles.scss */
@@ -42,4 +42,20 @@ body {
     /* line 48, styles.scss */
     .container .polygon #flash {
       -webkit-transform: skew(-55deg);
-      position: absolute; }
+      position: absolute;
+      right: 28%; }
+    /* line 54, styles.scss */
+    .container .polygon .blurb-wrapper {
+      position: absolute;
+      left: 4%;
+      color: white;
+      top: 38%;
+      height: 100%;
+      width: 100%;
+      vertical-align: middle; }
+      /* line 63, styles.scss */
+      .container .polygon .blurb-wrapper .caption {
+        -webkit-transform: skew(-55deg);
+        position: absolute;
+        left: 30%;
+        top: 48%; }
