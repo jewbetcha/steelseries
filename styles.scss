@@ -28,7 +28,7 @@ body {
     -webkit-transform: skew(55deg);
 
     &:hover {
-      -webkit-transition-duration:0.5s;
+      -webkit-transition-duration: 1s;
       width: 90%;
       z-index: 1;
     }
@@ -53,18 +53,43 @@ body {
 
     .blurb-wrapper {
       position: absolute;
-      left: 4%;
       color: white;
-      top: 38%;
       height: 100%;
       width: 100%;
       vertical-align: middle;
+      opacity: 0;
 
-      .caption {
+      .caption-left {
         -webkit-transform: skew(-55deg);
         position: absolute;
-        left: 30%;
-        top: 48%;
+        left: 32%;
+        top: 47%;
+      }
+      .caption-right {
+        -webkit-transform: skew(-55deg);
+        position: absolute;
+        right: 34%;
+        top: 45%;
+      }
+    }
+    #leftBlurb {
+      top: 0;
+      left: -5%;
+
+      &:hover {
+        left: 40%;
+        opacity: 1;
+        -webkit-transition-duration:0.7s;
+      }
+    }
+    #rightBlurb {
+      top: 0;
+      left: initial;
+
+      &:hover {
+        right: 40%;
+        opacity: 1;
+        -webkit-transition-duration:0.7s;
       }
     }
   }

@@ -26,7 +26,7 @@ body {
     -webkit-transform: skew(55deg); }
     /* line 30, styles.scss */
     .container #right:hover {
-      -webkit-transition-duration: 0.5s;
+      -webkit-transition-duration: 1s;
       width: 90%;
       z-index: 1; }
   /* line 38, styles.scss */
@@ -47,15 +47,38 @@ body {
     /* line 54, styles.scss */
     .container .polygon .blurb-wrapper {
       position: absolute;
-      left: 4%;
       color: white;
-      top: 38%;
       height: 100%;
       width: 100%;
-      vertical-align: middle; }
-      /* line 63, styles.scss */
-      .container .polygon .blurb-wrapper .caption {
+      vertical-align: middle;
+      opacity: 0; }
+      /* line 62, styles.scss */
+      .container .polygon .blurb-wrapper .caption-left {
         -webkit-transform: skew(-55deg);
         position: absolute;
-        left: 30%;
-        top: 48%; }
+        left: 32%;
+        top: 47%; }
+      /* line 68, styles.scss */
+      .container .polygon .blurb-wrapper .caption-right {
+        -webkit-transform: skew(-55deg);
+        position: absolute;
+        right: 34%;
+        top: 45%; }
+    /* line 75, styles.scss */
+    .container .polygon #leftBlurb {
+      top: 0;
+      left: -5%; }
+      /* line 79, styles.scss */
+      .container .polygon #leftBlurb:hover {
+        left: 40%;
+        opacity: 1;
+        -webkit-transition-duration: 0.7s; }
+    /* line 85, styles.scss */
+    .container .polygon #rightBlurb {
+      top: 0;
+      left: initial; }
+      /* line 89, styles.scss */
+      .container .polygon #rightBlurb:hover {
+        right: 40%;
+        opacity: 1;
+        -webkit-transition-duration: 0.7s; }
