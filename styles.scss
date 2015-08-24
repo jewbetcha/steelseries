@@ -15,7 +15,7 @@ body {
 
   #left {
     left: -26%;
-    -webkit-transform: skew(55deg);
+    -webkit-transform: skew(35deg);
 
     &:hover {
       -webkit-transition-duration:0.5s;
@@ -25,7 +25,7 @@ body {
   }
   #right {
     right: -27%;
-    -webkit-transform: skew(55deg);
+    -webkit-transform: skew(35deg);
 
     &:hover {
       -webkit-transition-duration: 1s;
@@ -40,15 +40,18 @@ body {
     width: 78%;
     position: absolute;
     overflow: hidden;
-
+    -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
     #league {
-      -webkit-transform: skew(-55deg);
+      -webkit-transform: skew(-35deg);
       position: absolute;
+    -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
     }
     #flash {
-      -webkit-transform: skew(-55deg);
+      -webkit-transform: skew(-35deg);
       position: absolute;
       right: 28%;
+      -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+
     }
 
     .blurb-wrapper {
@@ -65,13 +68,13 @@ body {
       }
 
       .caption-left {
-        -webkit-transform: skew(-55deg);
+        -webkit-transform: skew(-35deg);
         position: absolute;
         left: 25%;
         top: 47%;
       }
       .caption-right {
-        -webkit-transform: skew(-55deg);
+        -webkit-transform: skew(-35deg);
         position: absolute;
         right: 25%;
         top: 45%;
