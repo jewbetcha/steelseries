@@ -49,38 +49,57 @@ body {
       /* line 56, styles.scss */
       .container .polygon .blurb-wrapper:hover > p {
         -webkit-transition-duration: 0.7s;
-        color: white !important; }
-      /* line 60, styles.scss */
+        color: white !important;
+        text-shadow: 1px 1px #000; }
+      /* line 61, styles.scss */
+      .container .polygon .blurb-wrapper:hover > p > a {
+        -webkit-transition-duration: 0.7s;
+        opacity: 1;
+        text-shadow: 1px 1px #000; }
+      /* line 66, styles.scss */
       .container .polygon .blurb-wrapper p {
         font-size: 32px;
         font-family: arial;
         font-weight: bold;
         color: transparent; }
-      /* line 66, styles.scss */
-      .container .polygon .blurb-wrapper .caption-left {
-        -webkit-transform: skew(-35deg);
-        position: absolute;
-        left: 25%;
-        top: 47%; }
       /* line 72, styles.scss */
-      .container .polygon .blurb-wrapper .caption-right {
+      .container .polygon .blurb-wrapper .btn {
+        position: absolute;
+        opacity: 0;
+        -webkit-border-radius: 3;
+        -moz-border-radius: 3;
+        border-radius: 3px;
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 12px;
+        background: #3498db;
+        padding: 5px 10px 5px 10px;
+        text-decoration: none; }
+      /* line 87, styles.scss */
+      .container .polygon .blurb-wrapper #captionLeft {
         -webkit-transform: skew(-35deg);
         position: absolute;
-        right: 25%;
-        top: 45%; }
-    /* line 81, styles.scss */
-    .container .polygon #leftBlurb {
+        left: 30%;
+        top: 30%; }
+      /* line 93, styles.scss */
+      .container .polygon .blurb-wrapper #captionRight {
+        -webkit-transform: skew(-35deg);
+        position: absolute;
+        right: 30%;
+        top: 30%; }
+    /* line 100, styles.scss */
+    .container .polygon #leftWrapper {
       top: 0;
       left: 0; }
-      /* line 84, styles.scss */
-      .container .polygon #leftBlurb:hover {
+      /* line 103, styles.scss */
+      .container .polygon #leftWrapper:hover {
         left: 10%;
         -webkit-transition-duration: 0.7s; }
-    /* line 89, styles.scss */
-    .container .polygon #rightBlurb {
+    /* line 108, styles.scss */
+    .container .polygon #rightWrapper {
       top: 0;
       left: initial; }
-      /* line 92, styles.scss */
-      .container .polygon #rightBlurb:hover {
+      /* line 111, styles.scss */
+      .container .polygon #rightWrapper:hover {
         right: 15%;
         -webkit-transition-duration: 0.7s; }

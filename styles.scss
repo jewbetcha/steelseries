@@ -56,6 +56,12 @@ body {
       &:hover > p {
         -webkit-transition-duration: 0.7s;
         color: white !important;
+        text-shadow: 1px 1px #000;
+      }
+      &:hover > p > a {
+        -webkit-transition-duration: 0.7s;
+        opacity: 1;
+        text-shadow: 1px 1px #000;
       }
       p {
         font-size: 32px;
@@ -63,22 +69,35 @@ body {
         font-weight: bold;
         color: rgba(0, 0, 0, 0);
       }
-      .caption-left {
-        -webkit-transform: skew(-35deg);
+      .btn {
         position: absolute;
-        left: 25%;
-        top: 47%;
+        opacity: 0;
+        -webkit-border-radius: 3;
+        -moz-border-radius: 3;
+        border-radius: 3px;
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 12px;
+        background: #3498db;
+        padding: 5px 10px 5px 10px;
+        text-decoration: none;
       }
-      .caption-right {
+
+      // Caption specific
+      #captionLeft {
         -webkit-transform: skew(-35deg);
         position: absolute;
-        right: 25%;
-        top: 45%;
+        left: 30%;
+        top: 30%;
+      }
+      #captionRight {
+        -webkit-transform: skew(-35deg);
+        position: absolute;
+        right: 30%;
+        top: 30%;
       }
     }
-
-    // Caption specific
-    #leftBlurb {
+    #leftWrapper {
       top: 0;
       left: 0;
       &:hover {
@@ -86,7 +105,7 @@ body {
         -webkit-transition-duration: 0.7s;
       }
     }
-    #rightBlurb {
+    #rightWrapper {
       top: 0;
       left: initial;
       &:hover {
