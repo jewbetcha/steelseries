@@ -18,7 +18,7 @@ body {
     -webkit-transform: skew(35deg);
 
     &:hover {
-      -webkit-transition-duration:0.5s;
+      -webkit-transition-duration: 1s;
       width: 90%;
       z-index: 1;
     }
@@ -56,15 +56,20 @@ body {
 
     .blurb-wrapper {
       position: absolute;
-      color: white;
       height: 100%;
       width: 100%;
-      opacity: 0;
+      background: rgba(0, 0, 0, .3);
+
+      &:hover > p {
+        -webkit-transition-duration:0.7s;
+        color: white !important;
+      }
 
       p {
         font-size: 32px;
         font-family: arial;
         font-weight: bold;
+        color: rgba(0, 0, 0, 0);
       }
 
       .caption-left {
@@ -82,11 +87,10 @@ body {
     }
     #leftBlurb {
       top: 0;
-      left: -5%;
+      left: -3%;
 
       &:hover {
-        left: 35%;
-        opacity: 1;
+        left: 10%;
         -webkit-transition-duration:0.7s;
       }
     }
@@ -95,8 +99,7 @@ body {
       left: initial;
 
       &:hover {
-        right: 35%;
-        opacity: 1;
+        right: 15%;
         -webkit-transition-duration:0.7s;
       }
     }
