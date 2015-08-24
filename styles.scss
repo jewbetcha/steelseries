@@ -1,9 +1,9 @@
 @import "compass/css3";
-
 body {
   margin: 0;
 }
 
+// Container to hold everything
 .container {
   height: 500px;
   width: 90%;
@@ -13,66 +13,56 @@ body {
   right: 5%;
   left: 5%;
 
+  // Specific to each polygon
   #left {
     left: -26%;
     -webkit-transform: skew(35deg);
     z-index: 1 !important;
-
-    &:hover {
-      -webkit-transition-duration: 1.2s;
-      width: 90%;
-      z-index: 1;
-    }
   }
   #right {
     right: -27%;
     -webkit-transform: skew(35deg);
-    z-index: 1;
-
-    &:hover {
-      -webkit-transition-duration: 1.2s;
-      width: 90%;
-      z-index: 1;
-    }
   }
 
-
+  // All the stuff inside the polygons
   .polygon {
     height: 100%;
     width: 78%;
     position: absolute;
     overflow: hidden;
+    &:hover {
+      z-index: 1;
+      -webkit-transition-duration: 1.2s;
+      width: 90%;
+    }
 
+    // Image specific styles
     #league {
       -webkit-transform: skew(-35deg);
       position: absolute;
     }
-
     #flash {
       -webkit-transform: skew(-35deg);
       position: absolute;
-      right: 0%;
-
+      right: 0;
     }
 
+    // Caption
     .blurb-wrapper {
       position: absolute;
       height: 100%;
       width: 100%;
       background: rgba(0, 0, 0, .3);
-
       &:hover > p {
-        -webkit-transition-duration:0.7s;
+        -webkit-transition-duration: 0.7s;
         color: white !important;
       }
-
       p {
         font-size: 32px;
         font-family: arial;
         font-weight: bold;
         color: rgba(0, 0, 0, 0);
       }
-
       .caption-left {
         -webkit-transform: skew(-35deg);
         position: absolute;
@@ -87,26 +77,22 @@ body {
       }
     }
 
+    // Caption specific
     #leftBlurb {
       top: 0;
-      left: -3%;
-
+      left: 0;
       &:hover {
         left: 10%;
-        -webkit-transition-duration:0.7s;
+        -webkit-transition-duration: 0.7s;
       }
     }
-
     #rightBlurb {
       top: 0;
       left: initial;
-
       &:hover {
         right: 15%;
-        -webkit-transition-duration:0.7s;
+        -webkit-transition-duration: 0.7s;
       }
     }
   }
-
-
 }

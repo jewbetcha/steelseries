@@ -1,4 +1,4 @@
-/* line 3, styles.scss */
+/* line 2, styles.scss */
 body {
   margin: 0; }
 
@@ -11,82 +11,76 @@ body {
   overflow: hidden;
   right: 5%;
   left: 5%; }
-  /* line 16, styles.scss */
+  /* line 17, styles.scss */
   .container #left {
     left: -26%;
     -webkit-transform: skew(35deg);
     z-index: 1 !important; }
-    /* line 21, styles.scss */
-    .container #left:hover {
-      -webkit-transition-duration: 1.2s;
-      width: 90%;
-      z-index: 1; }
-  /* line 27, styles.scss */
+  /* line 22, styles.scss */
   .container #right {
     right: -27%;
-    -webkit-transform: skew(35deg);
-    z-index: 1; }
-    /* line 32, styles.scss */
-    .container #right:hover {
-      -webkit-transition-duration: 1.2s;
-      width: 90%;
-      z-index: 1; }
-  /* line 40, styles.scss */
+    -webkit-transform: skew(35deg); }
+  /* line 28, styles.scss */
   .container .polygon {
     height: 100%;
     width: 78%;
     position: absolute;
     overflow: hidden; }
-    /* line 46, styles.scss */
+    /* line 33, styles.scss */
+    .container .polygon:hover {
+      z-index: 1;
+      -webkit-transition-duration: 1.2s;
+      width: 90%; }
+    /* line 40, styles.scss */
     .container .polygon #league {
       -webkit-transform: skew(-35deg);
       position: absolute; }
-    /* line 51, styles.scss */
+    /* line 44, styles.scss */
     .container .polygon #flash {
       -webkit-transform: skew(-35deg);
       position: absolute;
-      right: 0%; }
-    /* line 58, styles.scss */
+      right: 0; }
+    /* line 51, styles.scss */
     .container .polygon .blurb-wrapper {
       position: absolute;
       height: 100%;
       width: 100%;
       background: rgba(0, 0, 0, 0.3); }
-      /* line 64, styles.scss */
+      /* line 56, styles.scss */
       .container .polygon .blurb-wrapper:hover > p {
         -webkit-transition-duration: 0.7s;
         color: white !important; }
-      /* line 69, styles.scss */
+      /* line 60, styles.scss */
       .container .polygon .blurb-wrapper p {
         font-size: 32px;
         font-family: arial;
         font-weight: bold;
         color: transparent; }
-      /* line 76, styles.scss */
+      /* line 66, styles.scss */
       .container .polygon .blurb-wrapper .caption-left {
         -webkit-transform: skew(-35deg);
         position: absolute;
         left: 25%;
         top: 47%; }
-      /* line 82, styles.scss */
+      /* line 72, styles.scss */
       .container .polygon .blurb-wrapper .caption-right {
         -webkit-transform: skew(-35deg);
         position: absolute;
         right: 25%;
         top: 45%; }
-    /* line 90, styles.scss */
+    /* line 81, styles.scss */
     .container .polygon #leftBlurb {
       top: 0;
-      left: -3%; }
-      /* line 94, styles.scss */
+      left: 0; }
+      /* line 84, styles.scss */
       .container .polygon #leftBlurb:hover {
         left: 10%;
         -webkit-transition-duration: 0.7s; }
-    /* line 100, styles.scss */
+    /* line 89, styles.scss */
     .container .polygon #rightBlurb {
       top: 0;
       left: initial; }
-      /* line 104, styles.scss */
+      /* line 92, styles.scss */
       .container .polygon #rightBlurb:hover {
         right: 15%;
         -webkit-transition-duration: 0.7s; }
